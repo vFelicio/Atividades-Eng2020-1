@@ -1,6 +1,6 @@
 package eng2020_1_a01;
 
-public class Triangulo extends Poligono {
+public class Triangulo extends Poligono implements DoisD {
 
 	@Override
 	public double area() {

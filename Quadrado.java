@@ -1,6 +1,6 @@
 package eng2020_1_a01;
 
-public class Quadrado extends Poligono implements Diagonal {
+public class Quadrado extends Poligono implements Diagonal, DoisD {
 
 	public Quadrado(double lado) {
 		super(lado, lado);

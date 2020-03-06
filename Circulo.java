@@ -1,28 +1,20 @@
 package eng2020_1_a01;
 
-public class Circulo extends Figura {
-	private double raio;
+public class Circulo extends Redondo implements DoisD {
 	
 	public Circulo(double raio) {
-		this.raio = raio;
+		super(raio);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public double area() {
-		return Math.PI * Math.pow(raio, 2);
-	}
-
-	public double getRaio() {
-		return raio;
-	}
-
-	public void setRaio(double raio) {
-		this.raio = raio;
+		return Math.PI * Math.pow(getRaio(), 2);
 	}
 
 	@Override
 	public String toString() {
-		return "Circulo [raio=" + raio + "]";
+		return "Circulo [raio=" + getRaio() + "]";
 	}
 
 	@Override

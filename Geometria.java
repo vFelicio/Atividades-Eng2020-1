@@ -17,12 +17,24 @@ public class Geometria {
 		figuras.add(new Triangulo(5, 7));
 		figuras.add(new Losango(8, 9));
 		figuras.add(new Trapezio(10, 5, 8));
+		figuras.add(new Cubo(3,3,3));
+		figuras.add(new Piramide(4,4,6));
+		figuras.add(new Esfera(2));
+		figuras.add(new Cilindro(3,6));
 		
 		for(Figura figura: figuras) {
 			System.out.println("**********************************************");
 			System.out.println(figura);
-			System.out.println("Área= "+figura.area());
-			System.out.println("Perimetro= "+figura.perimetro());
+			if (figura instanceof DoisD) {
+				DoisD two = (DoisD)figura;
+				System.out.println("Area = "+two.area());
+				System.out.println("Perimetro = "+two.perimetro());
+			}
+			if (figura instanceof TresD) {
+				TresD three = (TresD)figura;
+				System.out.println("Volume = "+three.volume());
+			}
+
 			if (figura instanceof Diagonal) {
 				Diagonal d = (Diagonal)figura;
 				System.out.println("Diagonal = "+d.diagonal());

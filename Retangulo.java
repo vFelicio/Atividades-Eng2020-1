@@ -1,6 +1,6 @@
 package eng2020_1_a01;
 
-public class Retangulo extends Poligono implements Diagonal {
+public class Retangulo extends Poligono implements Diagonal, DoisD {
 
 	public Retangulo(double base, double altura) {
 		super(base, altura);

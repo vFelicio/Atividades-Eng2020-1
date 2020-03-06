@@ -1,6 +1,6 @@
 package eng2020_1_a01;
 
-public class Trapezio extends Poligono {
+public class Trapezio extends Poligono implements DoisD {
 
 	private double basemaior;
 	

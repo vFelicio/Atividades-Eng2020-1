@@ -1,6 +1,6 @@
 package eng2020_1_a01;
 
-public class Losango extends Poligono {
+public class Losango extends Poligono implements DoisD {
 
 	public Losango(double base, double altura) {
 		super(base, altura);
